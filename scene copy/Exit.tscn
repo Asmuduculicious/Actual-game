@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxtr8hws3gyj3"]
+
+[sub_resource type="GDScript" id="GDScript_pmvqu"]
+script/source = "extends Node2D
+
+@onready var path_follow : PathFollow2D = $Path2D/PathFollow2D
+@export var speed = 20
+var forwards = true
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if path_follow.progress_ratio == 1:
+		if forwards == true:
+			forwards = false
+	if path_follow.progress_ratio == 0:
+		if forwards == false:
+			forwards = true
+	if forwards == true:
+		path_follow.progress += speed * delta
+	else:
+		path_follow.progress -= speed * delta
+		
+		
+	
+"
+
+[sub_resource type="Curve2D" id="Curve2D_biq1d"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2.08165e-12, -10, 0, 0, 0, 0, 2.08165e-12, 10)
+}
+point_count = 2
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ilohd"]
+radius = 31.0
+height = 66.0
+
+[sub_resource type="Gradient" id="Gradient_mmajs"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0fi2i"]
+gradient = SubResource("Gradient_mmajs")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0.2, 0.9)
+metadata/_snap_enabled = true
+
+[node name="Node2D" type="Node2D"]
+script = SubResource("GDScript_pmvqu")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_biq1d")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(2.08165e-12, -3.22288)
+rotation = 1.5708
+progress = 6.8
+loop = false
+
+[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D"]
+position = Vector2(-15, -0.50016)
+metadata/Exit = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Area2D"]
+position = Vector2(25, -1.09278e-06)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_ilohd")
+
+[node name="ColorRect" type="ColorRect" parent="Path2D/PathFollow2D"]
+offset_left = 10.0
+offset_top = -28.5002
+offset_right = 50.0
+offset_bottom = 11.4998
+rotation = 0.781683
+color = Color(0.388235, 0.388235, 0.388235, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="Path2D/PathFollow2D"]
+position = Vector2(10, -0.500161)
+rotation = -1.5708
+scale = Vector2(3.04688, 2.8125)
+texture = SubResource("GradientTexture2D_0fi2i")

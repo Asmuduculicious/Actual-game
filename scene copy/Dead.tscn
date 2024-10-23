@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbomf0lheqnfb"]
+
+[ext_resource type="Script" path="res://script/Dead.gd" id="1_yll8y"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(0.28, 0.28)
+script = ExtResource("1_yll8y")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 317.0
+offset_top = 219.0
+offset_right = 870.0
+offset_bottom = 456.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 73
+text = "YOU HAVE DIED"
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+text = "Click anywhere to restart"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

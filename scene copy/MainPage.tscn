@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://vrpg170c34jl"]
+
+[ext_resource type="Texture2D" uid="uid://cl27lkrodpnqm" path="res://assets/BackgroundNCutscene/MainPage.png" id="1_srwan"]
+[ext_resource type="Script" path="res://script/MainPage.gd" id="1_vdf8w"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(0.28, 0.28)
+script = ExtResource("1_vdf8w")
+
+[node name="Mainpage" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("1_srwan")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 312.0
+offset_top = -4.0
+offset_right = 1128.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 60
+text = "Cool Native American Game"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 740.0
+offset_top = 383.0
+offset_right = 1120.0
+offset_bottom = 515.0
+theme_override_font_sizes/font_size = 90
+action_mode = 0
+text = "START"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 882.0
+offset_top = 526.0
+offset_right = 967.0
+offset_bottom = 571.0
+text = "QUIT"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

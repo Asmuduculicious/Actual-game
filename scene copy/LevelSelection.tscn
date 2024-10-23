@@ -1,0 +1,210 @@
+[gd_scene load_steps=7 format=3 uid="uid://cv2urtgrgnf55"]
+
+[ext_resource type="Script" path="res://script/LevelSelection.gd" id="1_786np"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aswr2"]
+bg_color = Color(0.933333, 0.933333, 0.933333, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mo2yd"]
+bg_color = Color(0.866667, 0.866667, 0.866667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ee8dt"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rx3h0"]
+bg_color = Color(0.933333, 0.933333, 0.933333, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yx2rp"]
+bg_color = Color(0.866667, 0.866667, 0.866667, 1)
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(0.28, 0.28)
+script = ExtResource("1_786np")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 356.0
+offset_top = 19.0
+offset_right = 1140.0
+offset_bottom = 394.0
+theme_override_font_sizes/font_size = 100
+text = "LEVELS
+"
+
+[node name="TutorialButton" type="Button" parent="."]
+offset_left = 58.0
+offset_top = 169.0
+offset_right = 384.0
+offset_bottom = 253.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_aswr2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mo2yd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee8dt")
+text = "TUTORIAL"
+
+[node name="Level1Button" type="Button" parent="."]
+offset_left = 196.0
+offset_top = 311.0
+offset_right = 522.0
+offset_bottom = 395.0
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 1"
+
+[node name="Level1Button2" type="Button" parent="."]
+offset_left = 197.0
+offset_top = 310.0
+offset_right = 523.0
+offset_bottom = 394.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_rx3h0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yx2rp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee8dt")
+disabled = true
+text = "LEVEL 1"
+
+[node name="Level2Button" type="Button" parent="."]
+offset_left = 329.0
+offset_top = 445.0
+offset_right = 655.0
+offset_bottom = 529.0
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 2
+"
+
+[node name="Level2Button2" type="Button" parent="."]
+offset_left = 330.0
+offset_top = 446.0
+offset_right = 656.0
+offset_bottom = 530.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_rx3h0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yx2rp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee8dt")
+disabled = true
+text = "LEVEL 2"
+
+[node name="Level3Button" type="Button" parent="."]
+offset_left = 611.0
+offset_top = 173.0
+offset_right = 937.0
+offset_bottom = 257.0
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 3
+"
+
+[node name="Level3Button2" type="Button" parent="."]
+offset_left = 612.0
+offset_top = 171.0
+offset_right = 938.0
+offset_bottom = 255.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_rx3h0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yx2rp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee8dt")
+disabled = true
+text = "LEVEL 3"
+
+[node name="Level4Button" type="Button" parent="."]
+offset_left = 738.0
+offset_top = 313.0
+offset_right = 1064.0
+offset_bottom = 397.0
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 4"
+
+[node name="Level4Button2" type="Button" parent="."]
+offset_left = 739.0
+offset_top = 316.0
+offset_right = 1065.0
+offset_bottom = 400.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_rx3h0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yx2rp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee8dt")
+disabled = true
+text = "LEVEL 4"
+
+[node name="Level5Button" type="Button" parent="."]
+offset_left = 792.0
+offset_top = 452.0
+offset_right = 1118.0
+offset_bottom = 536.0
+theme_override_font_sizes/font_size = 50
+text = "LEVEL 5"
+
+[node name="Level5Button2" type="Button" parent="."]
+offset_left = 795.0
+offset_top = 452.0
+offset_right = 1121.0
+offset_bottom = 536.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_rx3h0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yx2rp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee8dt")
+disabled = true
+text = "LEVEL 5"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 128.0
+offset_top = 261.0
+offset_right = 953.0
+offset_bottom = 303.0
+theme_override_font_sizes/font_size = 30
+text = "You must complete the previous levels before advancing!"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="TutorialButton2" type="Button" parent="."]
+offset_left = 14.2857
+offset_top = 10.7143
+offset_right = 164.286
+offset_bottom = 94.7143
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover = SubResource("StyleBoxFlat_aswr2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mo2yd")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ee8dt")
+text = "Back
+"
+
+[connection signal="pressed" from="TutorialButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Level1Button" to="." method="_on_level_1_button_pressed"]
+[connection signal="pressed" from="Level1Button2" to="." method="_on_level_1_button_2_pressed"]
+[connection signal="pressed" from="Level2Button" to="." method="_on_level_2_button_pressed"]
+[connection signal="pressed" from="Level2Button2" to="." method="_on_level_2_button_2_pressed"]
+[connection signal="pressed" from="Level3Button" to="." method="_on_level_3_button_pressed"]
+[connection signal="pressed" from="Level3Button2" to="." method="_on_level_3_button_2_pressed"]
+[connection signal="pressed" from="Level4Button" to="." method="_on_level_4_button_pressed"]
+[connection signal="pressed" from="Level4Button2" to="." method="_on_level_4_button_2_pressed"]
+[connection signal="pressed" from="Level5Button" to="." method="_on_level_5_button_pressed"]
+[connection signal="pressed" from="Level5Button2" to="." method="_on_level_5_button_2_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="TutorialButton2" to="." method="_on_tutorial_button_2_pressed"]
