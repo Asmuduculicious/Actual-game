@@ -15,3 +15,6 @@ func _on_button_pressed():
 		get_tree().change_scene_to_file("res://scene/Level4.tscn")
 	if global.current_level == "Level_5":
 		get_tree().change_scene_to_file("res://scene/Level5.tscn")
+
+# When a character is dead, this allows them to restart the level they started
+# They know what level they are in from the global variable which is set when they enter different levels

@@ -10,3 +10,5 @@ var level_3 = false
 var level_4 = false
 var level_5 = false
 var hp = 0
+
+# Setting up various variables to be able to be changed/pulled for different nodes

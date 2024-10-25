@@ -178,6 +178,10 @@ func _on_area_2d_2_area_entered(area):
 
 func _on_timer_5_timeout():
 	locked = false
+
+# After the timer runs out, they are no longer knocked back and can move freely
 	
 func _damaged(damage_amount):
 	global.hp -= damage_amount
+
+# A function that can be used to take a parameter and do different things with it

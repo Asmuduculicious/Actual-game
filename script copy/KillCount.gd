@@ -9,3 +9,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	$Label.text = ("Kill count : " + str(global.kills)) + "\n"  + ("HP : " + str(global.hp))
+
+# Have a label on the screen that updates on time to the HP of the player
+# As well as the amount of enemies you have killed in total
